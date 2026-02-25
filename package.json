@@ -1,19 +1,23 @@
 {
-  "name": "R3F-gsap-practice",
+  "name": "r3f-gsap-practice",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://amandalimon.github.io/r3f-gsap-practice",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@react-three/postprocessing": "^3.0.4",
     "@types/three": "^0.183.1",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.14.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

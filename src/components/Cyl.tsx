@@ -15,7 +15,7 @@ const SPIN_BASE = 0.5;
 const SPIN_CURSOR_BOOST = 0.4;
 
 const Cyl = () => {
-  const tex = useTexture("/images.png");
+  const tex = useTexture(`${import.meta.env.BASE_URL}images.png`);
   const outerRef = useRef<THREE.Group>(null);
   const innerRef = useRef<THREE.Group>(null);
   const smoothedMouse = useRef(new THREE.Vector2(0, 0));
