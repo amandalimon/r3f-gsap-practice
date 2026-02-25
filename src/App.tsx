@@ -17,9 +17,9 @@ const App = () => {
         <EffectComposer>
           <Bloom
             mipmapBlur
-            intensity={0.5}
-            luminanceThreshold={0.2}
-            luminanceSmoothing={0.025}
+            intensity={0.3}
+            luminanceThreshold={0.15}
+            luminanceSmoothing={0.1}
           />
           <ToneMapping adaptative />
         </EffectComposer>
